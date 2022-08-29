@@ -34,17 +34,22 @@ Ve işlem tamam, artık ne kadar sınıf BlogManager'dan veri çekmeye çalış�
 
 ## BlogApp Uygulaması
 ### Tanıtım
-Uygulamamız iki adet ekrandan oluşuyor. İki ekranda da birer adet textField ve button bulunmakta. Kullanıcının girmiş olduğu id numarasına göre api'dan veri çekilecek ve ilk view controller'da veriler alert olarak gösterilecek. İkinci view controller'da ise içerik ekrandaki label'a yazdırılacak.
+Uygulamamız iki adet ekrandan oluşuyor. İki ekranda da birer adet textField ve button bulunmakta. Kullanıcının girmiş olduğu id numarasına göre api'dan veri çekilecek. İlk view controller'da veriler alert olarak gösterilecek. İkinci view controller'da ise içerik ekrandaki label'a yazdırılacak.
+
+![5](https://github.com/sametkoyuncu/BlogApp-DelegateDesignPattern/blob/main/images/5.png?raw=true)
+
 Veriler https://jsonplaceholder.typicode.com/posts/{id} adresine istek atarak çekilecek ve gelen veri aşağıdaki gibi bir JSON objesi olacak.
+
+![6](https://github.com/sametkoyuncu/BlogApp-DelegateDesignPattern/blob/main/images/6.png?raw=true)
 
 ### Proje
 * İlk olarak aşağıdaki gibi bir Xcode projesi oluşturalım.
 
-![5](https://github.com/sametkoyuncu/BlogApp-DelegateDesignPattern/blob/main/images/5.png?raw=true)
+![7](https://github.com/sametkoyuncu/BlogApp-DelegateDesignPattern/blob/main/images/7.png?raw=true)
 
 * BlogViewController ve AnotherViewController adında iki adet Cocoa Touch Class dosyası oluşturalım. Ardından view tasarımlarını yukarıdaki gibi ayarlayalım.
 
-![6](https://github.com/sametkoyuncu/BlogApp-DelegateDesignPattern/blob/main/images/6.png?raw=true)
+![8](https://github.com/sametkoyuncu/BlogApp-DelegateDesignPattern/blob/main/images/8.png?raw=true)
 
 * Oluşturduğumuz sınıflara, tasarımdaki ilgili nesneleri bağlayalım.
 
