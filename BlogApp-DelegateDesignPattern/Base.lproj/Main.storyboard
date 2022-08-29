@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Blog View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BlogViewController" customModule="BlogApp_DelegateDesignPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="P1v-SH-iV2">
+                                <rect key="frame" x="20" y="422" width="374" height="52.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Blog ID Giriniz.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1LW-pG-HjB">
+                                        <rect key="frame" x="0.0" y="0.0" width="274.5" height="52.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYB-fR-axj">
+                                        <rect key="frame" x="282.5" y="0.0" width="91.5" height="52.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="91.5" id="IFL-fz-z4h"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Getir">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s85-2x-2qM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fch-nS-vCw">
+                                <rect key="frame" x="39" y="344" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKK-Or-Z95">
+                                <rect key="frame" x="20" y="509" width="374" height="61"/>
+                                <string key="text">* 1 ile 100 arasındaki sayılar geçerli 'id' değerleridir. Diğer veriler hata dönecek ve 'didFailWithError' metodu tetiklenecektir.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25R-hq-vhF">
+                                <rect key="frame" x="132.5" y="801" width="149.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" imagePlacement="trailing" title="Diğer View'a Git"/>
+                                <connections>
+                                    <segue destination="R0x-bO-9zc" kind="presentation" id="LZh-ge-bjj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blog View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3z-ec-5aq">
+                                <rect key="frame" x="72" y="144" width="270" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P1v-SH-iV2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2YU-bw-dbO"/>
+                            <constraint firstItem="A3z-ec-5aq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="4wl-uI-Y5i"/>
+                            <constraint firstItem="A3z-ec-5aq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Xb-ck-WD6"/>
+                            <constraint firstItem="P1v-SH-iV2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9HZ-pR-Olg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="25R-hq-vhF" secondAttribute="bottom" constant="30" id="AcT-tm-AnZ"/>
+                            <constraint firstItem="25R-hq-vhF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BRD-TF-m5g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P1v-SH-iV2" secondAttribute="trailing" constant="20" id="eTd-6O-mgK"/>
+                            <constraint firstAttribute="trailing" secondItem="DKK-Or-Z95" secondAttribute="trailing" constant="20" id="hnB-DO-syY"/>
+                            <constraint firstItem="DKK-Or-Z95" firstAttribute="top" secondItem="P1v-SH-iV2" secondAttribute="bottom" constant="34.5" id="rAc-if-bNt"/>
+                            <constraint firstItem="DKK-Or-Z95" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vEV-cl-hi5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="idField" destination="1LW-pG-HjB" id="XDW-Bq-F0X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="101.78571428571428"/>
+        </scene>
+        <!--Another Blog View Controller-->
+        <scene sceneID="lAG-6g-2Ps">
+            <objects>
+                <viewController id="R0x-bO-9zc" customClass="AnotherBlogViewController" customModule="BlogApp_DelegateDesignPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xdr-42-9aU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Another Blog View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNc-hd-nfw">
+                                <rect key="frame" x="47.5" y="64" width="319.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="djQ-ys-Sek">
+                                <rect key="frame" x="40" y="134" width="334" height="52.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Blog ID Giriniz.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NId-KM-fIe">
+                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="52.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDe-iY-2VD">
+                                        <rect key="frame" x="242.5" y="0.0" width="91.5" height="52.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Getir">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="R0x-bO-9zc" eventType="touchUpInside" id="FvP-f1-ZYt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52.5" id="6BG-V8-BWQ"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Body:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54p-Df-Tl5">
+                                <rect key="frame" x="20" y="206.5" width="88" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post details.." lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogr-fY-CA0">
+                                <rect key="frame" x="20" y="247" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mHv-nw-bSN"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="Ogr-fY-CA0" firstAttribute="leading" secondItem="mHv-nw-bSN" secondAttribute="leading" constant="20" id="03w-MA-Fdg"/>
+                            <constraint firstItem="mHv-nw-bSN" firstAttribute="trailing" secondItem="djQ-ys-Sek" secondAttribute="trailing" constant="40" id="2ww-pp-9f6"/>
+                            <constraint firstItem="djQ-ys-Sek" firstAttribute="leading" secondItem="mHv-nw-bSN" secondAttribute="leading" constant="40" id="4aX-4o-oKc"/>
+                            <constraint firstItem="mHv-nw-bSN" firstAttribute="trailing" secondItem="djQ-ys-Sek" secondAttribute="trailing" constant="40" id="Cw4-8V-Vy9"/>
+                            <constraint firstItem="54p-Df-Tl5" firstAttribute="leading" secondItem="mHv-nw-bSN" secondAttribute="leading" constant="20" id="FGR-fb-cIF"/>
+                            <constraint firstItem="Ogr-fY-CA0" firstAttribute="top" secondItem="54p-Df-Tl5" secondAttribute="bottom" constant="20" id="G58-C5-iWg"/>
+                            <constraint firstItem="djQ-ys-Sek" firstAttribute="top" secondItem="YNc-hd-nfw" secondAttribute="bottom" constant="40" id="Qet-s9-5Xj"/>
+                            <constraint firstItem="mHv-nw-bSN" firstAttribute="trailing" secondItem="Ogr-fY-CA0" secondAttribute="trailing" constant="20" id="XWZ-Qv-1O7"/>
+                            <constraint firstItem="YNc-hd-nfw" firstAttribute="top" secondItem="mHv-nw-bSN" secondAttribute="top" constant="20" id="qR5-eT-Cpg"/>
+                            <constraint firstItem="54p-Df-Tl5" firstAttribute="top" secondItem="djQ-ys-Sek" secondAttribute="bottom" constant="20" id="ucD-io-zOd"/>
+                            <constraint firstItem="YNc-hd-nfw" firstAttribute="centerX" secondItem="Xdr-42-9aU" secondAttribute="centerX" id="xAA-AG-s5M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="idField" destination="NId-KM-fIe" id="TPn-Lw-yz5"/>
+                        <outlet property="postBodyLabel" destination="Ogr-fY-CA0" id="oBx-fq-cuR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="soy-WK-QuC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798.55072463768124" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.right" catalog="system" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
