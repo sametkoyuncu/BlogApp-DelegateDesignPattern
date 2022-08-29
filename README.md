@@ -265,3 +265,7 @@ Buraya kadar geldiğiniz için teşekkürler. Bu benim medium üzerinde ilk yaz�
 * [Twitter](https://twitter.com/sametdotpage)
 * [Website](https://samet.page/)
 * [Email](mailto:sametkoyuncu@live.com)
+
+## Kaynaklar
+[Angela Yu - Udemy iOS Course](https://www.udemy.com/course/ios-13-app-development-bootcamp/)
+[Rebeloper Youtube Channel](https://youtu.be/UQnSdXFDAQQ)
