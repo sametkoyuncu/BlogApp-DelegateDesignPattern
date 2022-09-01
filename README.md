@@ -1,4 +1,5 @@
 > Bu repository'de "Swift'te 'Delegate Design Pattern' Nedir? Nasıl Kullanılır?" isimli blog yazım ve örnek uygulaması bulunmaktadır. İyi keyifler.. :)
+> [Yazıyı Medium üzerinde görüntülemek için tıklayınız 👆🏻](https://medium.com/@sametkoyuncu/swiftte-the-delegate-design-pattern-nedir-nas%C4%B1l-kullan%C4%B1l%C4%B1r-3e2cd9ea7019)
 
 # Swift'te 'Delegate Design Pattern' Nedir? Nasıl Kullanılır? 
 Merhaba, arkadaşlar. Yaklaşık bir buçuk ay önce yazılımda web alanından mobil iOS alanına geçmeye karar verdim. Bu süreçte oldukça hoşuma giden bir konuyu sizlerle paylaşmak istiyorum. Umarım sizler için faydalı olur.
